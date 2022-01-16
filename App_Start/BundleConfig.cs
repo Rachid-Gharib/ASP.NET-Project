@@ -24,7 +24,7 @@ namespace Projet_Web_MVC_avec_fichier___CRUD {
             //          "~/Content/site.css"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/w3.css"));
+                      "~/Content/w3.css", "~/Content/font-awesome/css/font-awesome.min.css"));
         }
     }
 }

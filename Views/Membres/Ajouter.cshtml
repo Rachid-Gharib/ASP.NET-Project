@@ -1,0 +1,54 @@
+﻿@model Projet_Web_MVC_avec_fichier___CRUD.Models.Membre
+
+@{
+    ViewBag.Title = "Ajouter";
+    @*Layout = "~/Views/Shared/_Layout.cshtml";*@
+}
+
+<div class="w3-container w3-margin">
+    <form action="/Enregistrer" name="formEnreg" method="post" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
+        <h2 class="w3-center">Enregistrement</h2>
+
+        <div class="w3-row w3-section">
+            <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+            <div class="w3-rest">
+                <input class="w3-input w3-border" name="prenom" type="text" placeholder="Prenom">
+            </div>
+        </div>
+
+        <div class="w3-row w3-section">
+            <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+            <div class="w3-rest">
+                <input class="w3-input w3-border" name="nom" type="text" placeholder="Nom">
+            </div>
+        </div>
+
+        <div class="w3-row w3-section">
+            <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+            <div class="w3-rest">
+                <input class="w3-input w3-border" name="courriel" type="text" placeholder="Courriel">
+            </div>
+        </div>
+
+        <div class="w3-row w3-section">
+            <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+            <div class="w3-rest">
+                <input class="w3-input w3-border" name="telephone" type="text" placeholder="Telephone">
+            </div>
+        </div>
+
+        <div class="w3-row w3-section">
+            <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+            <div class="w3-rest">
+                <input class="w3-input w3-border" name="commentaire" type="text" placeholder="Commentaire">
+            </div>
+        </div>
+
+        <p class="w3-center">
+            <button class="w3-button w3-section w3-blue w3-ripple" onclick="formEnreg.submit();"> Envoyer </button>
+        </p>
+    </form>
+
+</div>
+    
+
