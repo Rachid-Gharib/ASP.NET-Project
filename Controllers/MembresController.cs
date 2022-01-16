@@ -64,7 +64,7 @@ namespace Projet_Web_MVC_avec_fichier___CRUD.Controllers
             try
             {
                 using (StreamWriter fichMembres = // the keyword ussing deconstruct the buffer automatically when the program is out of its scope
-                new StreamWriter(Server.MapPath(@"~/Content/donnes/membres.txt"),true)) { // true helps to append infos instead of recreating the txt file every time!!
+                new StreamWriter(Server.MapPath(@"~/Content/donnees/membres.txt"),true)) { // true helps to append infos instead of recreating the txt file every time!!
 
                     ligne += Convert.ToString(collection["prenom"]) + ";";
                     ligne += Convert.ToString(collection["nom"]) + ";";

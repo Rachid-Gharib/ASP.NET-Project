@@ -8,16 +8,15 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="w3-container">
-        <ul class="w3-navbar w3-border w3-light-gray">
-            <li><a class="w3-hover-red" href="Index">Accueil</a></li>
-            <li><a class="w3-hover-blue" href="Ajouter">Nouveau membre</a></li>
-            <li><a class="w3-hover-green" href="ListerTout">Liste des membres</a></li>
-            <li><a class="w3-hover-teal" href="#">Modifier un membre</a></li>
-            <li><a class="w3-hover-yellow" href="#">Enlever un membre</a></li>
-        </ul>
-        
-    </div>
+    <nav class="w3-container">
+        <div class="w3-bar w3-border w3-light-grey w3-center">
+            <a style="width:20%" class="w3-bar-item w3-button w3-mobile" href="Index">Accueil</a>
+            <a style="width:20%" class="w3-bar-item w3-button w3-mobile" href="Ajouter">Nouveau membre</a>
+            <a style="width:20%" class="w3-bar-item w3-button w3-mobile" href="ListerTout">Liste des membres</a>
+            <a style="width:20%" class="w3-bar-item w3-button w3-mobile" href="#">Modifier un membre</a>
+            <a style="width:20%" class="w3-bar-item w3-button w3-mobile" href="#">Enlever un membre</a>
+        </div>
+    </nav>
     <div class="w3-container">
         @RenderBody()
         <hr />
@@ -26,8 +25,8 @@
         </footer>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jquery")  
     @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    @RenderSection("scripts",required: false)
 </body>
 </html>

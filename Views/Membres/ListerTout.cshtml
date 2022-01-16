@@ -1,9 +1,30 @@
-﻿@model Projet_Web_MVC_avec_fichier___CRUD.Models.Membre
+﻿@model IEnumerable<Projet_Web_MVC_avec_fichier___CRUD.Models.Membre>
 
 @{
     ViewBag.Title = "ListerTout";
-    @*Layout = "~/Views/Shared/_Layout.cshtml";*@
+    
 }
 
-<h2>ListerTout</h2>
+<div class="w3-container">
+    <h2>Liste des membres</h2>
+    <table class="w3-table-all w3-card-5">
+        <tr class="w3-highway-blue">
+            <th>@Html.DisplayNameFor(model => model.Prenom)</th>
+            <th>@Html.DisplayNameFor(model => model.Nom)</th>
+            <th>@Html.DisplayNameFor(model => model.Courriel)</th>
+            <th>@Html.DisplayNameFor(model => model.Telephone)</th>
+            <th>@Html.DisplayNameFor(model => model.Commentaire)</th>
+        </tr>
+
+        @foreach(var item in Model) {
+            <tr>
+                <td>@item.Prenom</td>
+                <td>@item.Nom</td>
+                <td>@item.Courriel</td>
+                <td>@item.Telephone</td>
+                <td>@item.Commentaire</td>
+            </tr>
+        }
+    </table>
+</div>
 
